@@ -24,10 +24,10 @@ webcam.start()
 });
 let picture = webcam.snap();
 document.querySelector('#download-photo').href = picture;
-$('#cameraFlip').click(function() {
+document.querySelector('#cameraFlip').onclick = function() {
   webcam.flip();
   webcam.start();
-});
+}
 
         </script>
     </body>
