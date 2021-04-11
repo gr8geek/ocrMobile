@@ -6,7 +6,7 @@
         <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
     </head>
     <body>
-      <h1>OCR Mobile Web app</h1>
+      <h1>OCR Mobile Web app 2</h1>
       <h1 id="app"></h1>
         <video id="webcam" autoplay playsinline width="640" height="480"></video>
         <canvas id="canvas" class="d-none"></canvas>
@@ -33,7 +33,7 @@ $('#cameraFlip').click(function() {
   webcam.flip();
   webcam.start();
 });
-document.querySelector("#camCap").addEventListener('touchstart', (event)=>{
+document.querySelector("#camCap").addEventListener('touchstart click', (event)=>{
   var pic = webcam.snap()
   c++
   document.querySelector("#app").innerHTML `Times captured ${c.toString()}`
