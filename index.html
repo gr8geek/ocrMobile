@@ -33,11 +33,11 @@ $('#cameraFlip').click(function() {
   webcam.flip();
   webcam.start();
 });
-$("#camCap").on("tap",()=>{
+document.querySelector("#camCap").addEventListener('touchstart', (event)=>{
   var pic = webcam.snap()
   c++
   document.querySelector("#app").innerHTML `Times captured ${c.toString()}`
-})
+}, false)
 
         </script>
     </body>
